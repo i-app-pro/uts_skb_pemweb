@@ -18,7 +18,7 @@ export default function CategoryIndex() {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/categories"
+                "https://utsskbpemweb-production.up.railway.app/categories"
             );
 
             const data = await response.json();
@@ -51,7 +51,7 @@ export default function CategoryIndex() {
         try {
 
             await fetch(
-                `http://localhost:3000/categories/${id}`,
+                `https://utsskbpemweb-production.up.railway.app/categories/${id}`,
                 {
                     method: "DELETE",
                 }
