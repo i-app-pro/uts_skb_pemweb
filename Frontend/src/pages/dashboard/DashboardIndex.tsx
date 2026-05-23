@@ -16,9 +16,9 @@ export default function DashboardIndex() {
     const fetchDashboard = async () => {
         try {
             const [categoryRes, eventRes, pembicaraRes] = await Promise.all([
-                axios.get("http://localhost:3000/categories"),
-                axios.get("http://localhost:3000/events"),
-                axios.get("http://localhost:3000/speeker"),
+                axios.get("https://utsskbpemweb-production.up.railway.app/categories"),
+                axios.get("https://utsskbpemweb-production.up.railway.app/events"),
+                axios.get("https://utsskbpemweb-production.up.railway.app/speeker"),
             ]);
 
             setStats({
