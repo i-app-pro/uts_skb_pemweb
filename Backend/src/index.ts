@@ -5,9 +5,14 @@ import categoryRoute from './routes/categoryRoute';
 import pembicaraRoute from './routes/pembicaraRoute';
 
 const app = express();
-const port = process.env.port || 3000
 
-app.use(cors());
+const PORT = process.env.PORT || 3000;
+
+app.use(cors({
+  origin: "https://utsskbpemweb.vercel.app",
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -18,6 +23,6 @@ app.use('/events', eventRoute);
 app.use('/categories', categoryRoute);
 app.use('/speeker', pembicaraRoute);
 
-app.listen(port,() => {
-    console.log(`Server is running on ${port}`)
+app.listen(PORT, () => {
+    console.log(`Server is running on ${PORT}`);
 });
