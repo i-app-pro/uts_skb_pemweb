@@ -28,7 +28,7 @@ export default function EventIndex() {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/events"
+                "https://utsskbpemweb-production.up.railway.app/events"
             );
 
             const data = await response.json();
@@ -61,7 +61,7 @@ export default function EventIndex() {
         try {
 
             await fetch(
-                `http://localhost:3000/events/${id}`,
+                `https://utsskbpemweb-production.up.railway.app/events/${id}`,
                 {
                     method: "DELETE",
                 }
