@@ -4,17 +4,23 @@ import { prisma } from "../lib/db";
 
 // 1. menampilkan data category
 export const getCategories = async(req:Request, res:Response) => {
-    // menggambil data dari database
     try{
         const allEvents = await prisma.category.findMany({
             orderBy: {
                 createdAt: "desc"
             }
         })
-        // tampilkan datanya
+
         res.json(allEvents);
-    }catch(error) {
-        res.status(500).json({message: "Gagal mengambil data category", error});
+
+    }catch(error: any) {
+
+        console.error(error);
+
+        res.status(500).json({
+            message: "Gagal mengambil data category",
+            error: error.message
+        });
     }
 };
 
