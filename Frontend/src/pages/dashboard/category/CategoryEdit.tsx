@@ -27,7 +27,7 @@ export default function CategoryEdit() {
             try {
 
                 const response = await fetch(
-                    `http://localhost:3000/categories/${id}`
+                    `https://utsskbpemweb-production.up.railway.app/categories/${id}`
                 );
 
                 const data = await response.json();
@@ -50,7 +50,7 @@ export default function CategoryEdit() {
         try {
 
             await fetch(
-                `http://localhost:3000/categories/${id}`,
+                `https://utsskbpemweb-production.up.railway.app/categories/${id}`,
                 {
                     method: "PUT",
                     headers: {
