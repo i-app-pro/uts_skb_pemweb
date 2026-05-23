@@ -20,7 +20,7 @@ export default function PembicaraIndex() {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/speeker"
+                "https://utsskbpemweb-production.up.railway.app/speeker"
             );
 
             const data = await response.json();
