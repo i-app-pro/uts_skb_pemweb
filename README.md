@@ -20,8 +20,8 @@ Sistem manajemen event berbasis Fullstack Web yang dibuat untuk kebutuhan UTS Pe
 
 | Field    | Value    |
 | -------- | -------- |
-| Email    | 24090070 |
-| Password | 24090070 |
+| Email    | 24090101 |
+| Password | 24090101 |
 
 ---
 
