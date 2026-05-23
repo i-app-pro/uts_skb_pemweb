@@ -19,5 +19,5 @@ app.use('/categories', categoryRoute);
 app.use('/speeker', pembicaraRoute);
 
 app.listen(port,() => {
-    console.log(`Server is running on http://localhost:${port}`)
+    console.log(`Server is running on ${port}`)
 });
