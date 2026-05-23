@@ -22,7 +22,7 @@ export default function PembicaraCreate() {
         try {
 
             await fetch(
-                "http://localhost:3000/speeker",
+                "https://utsskbpemweb-production.up.railway.app/speeker",
                 {
                     method: "POST",
                     headers: {
