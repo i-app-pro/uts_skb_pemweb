@@ -5,8 +5,9 @@ import categoryRoute from './routes/categoryRoute';
 import pembicaraRoute from './routes/pembicaraRoute';
 
 const app = express();
-
 const PORT = process.env.PORT || 3000;
+
+console.log(process.env.DATABASE_URL)
 
 app.use(cors({
   origin: "https://utsskbpemweb.vercel.app",
