@@ -20,7 +20,7 @@ export default function CategoryCreate() {
         try {
 
             await fetch(
-                "http://localhost:3000/categories",
+                "https://utsskbpemweb-production.up.railway.app/categories",
                 {
                     method: "POST",
                     headers: {
