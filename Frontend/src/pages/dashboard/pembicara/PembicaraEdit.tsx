@@ -29,7 +29,7 @@ export default function PembicaraEdit() {
             try {
 
                 const response = await fetch(
-                    `http://localhost:3000/speeker/${id}`
+                    `https://utsskbpemweb-production.up.railway.app/speeker/${id}`
                 );
 
                 const data = await response.json();
@@ -54,7 +54,7 @@ export default function PembicaraEdit() {
         try {
 
             await fetch(
-                `http://localhost:3000/speeker/${id}`,
+                `https://utsskbpemweb-production.up.railway.app/speeker/${id}`,
                 {
                     method: "PUT",
                     headers: {
