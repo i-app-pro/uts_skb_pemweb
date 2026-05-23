@@ -37,7 +37,7 @@ export default function EventCreate() {
     const fetchCategories = async () => {
 
         const response = await fetch(
-            "http://localhost:3000/categories"
+            "https://utsskbpemweb-production.up.railway.app/categories"
         );
 
         const data = await response.json();
@@ -49,7 +49,7 @@ export default function EventCreate() {
     const fetchSpeakers = async () => {
 
         const response = await fetch(
-            "http://localhost:3000/speeker"
+            "https://utsskbpemweb-production.up.railway.app/speeker"
         );
 
         const data = await response.json();
@@ -70,7 +70,7 @@ export default function EventCreate() {
         try {
 
             await fetch(
-                "http://localhost:3000/events",
+                "https://utsskbpemweb-production.up.railway.app/events",
                 {
                     method: "POST",
                     headers: {
