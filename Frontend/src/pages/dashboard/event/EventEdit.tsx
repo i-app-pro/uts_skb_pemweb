@@ -43,7 +43,7 @@ export default function EventEdit() {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/categories"
+                "https://utsskbpemweb-production.up.railway.app/categories"
             );
 
             const data = await response.json();
@@ -62,7 +62,7 @@ export default function EventEdit() {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/speeker"
+                "https://utsskbpemweb-production.up.railway.app/speeker"
             );
 
             const data = await response.json();
@@ -81,7 +81,7 @@ export default function EventEdit() {
         try {
 
             const response = await fetch(
-                `http://localhost:3000/events/${id}`
+                `https://utsskbpemweb-production.up.railway.app/events/${id}`
             );
 
             const data = await response.json();
@@ -121,7 +121,7 @@ export default function EventEdit() {
         try {
 
             await fetch(
-                `http://localhost:3000/events/${id}`,
+                `https://utsskbpemweb-production.up.railway.app/events/${id}`,
                 {
                     method: "PUT",
                     headers: {
